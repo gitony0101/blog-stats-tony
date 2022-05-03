@@ -1,0 +1,41 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Machine learning
+    chapters:
+      - file: sklearn/01-data-processing
+      - file: sklearn/02-classification
+      - file: sklearn/03-linear-models
+      - file: sklearn/04-decision-trees
+      - file: sklearn/05-ensemble-learning
+      - file: sklearn/06-dimensionality-reduction
+      - file: sklearn/07-unsupervised-learning
+  - caption: Deep learning - PyTorch
+    chapters:
+      - file: pytorch/1-intro-pytorch
+      # - file: pytorch/2-pytorch-deeper
+      # - file: pytorch/3-cnn
+      # - file: pytorch/4-rnn
+      # - file: pytorch/5-transformer
+  - caption: Probablity
+    chapters:
+      - file: probability/01-probability
+      - file: probability/02-conditional-probability
+      - file: probability/03-distributions
+      # - file: probability/04-expectation
+      # - file: probability/05-continuous-random-variables
+      # - file: probability/06-moments
+      # - file: probability/07-joint-distributions
+      # - file: probability/08-transformations
+      # - file: probability/09-conditional-expectation
+      # - file: probability/10-inequalities-and-limit-theorems
+      # - file: probability/11-markov-chains
+      # - file: probability/12-markov-chain-monte-carlo
+      # - file: probability/13-poisson-processes
+      # - file: probability/14-sampling
+      # - file: probability/15-parameter-testing
+      # - file: probability/16-non-parameter-testing
+      # - file: probability/17-survival-analysis

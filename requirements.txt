@@ -1,0 +1,8 @@
+jupyter-book
+matplotlib
+numpy
+pandas
+seaborn
+scipy
+scikit-learn
+pytorch
