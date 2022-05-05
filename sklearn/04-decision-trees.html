@@ -467,13 +467,13 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">export_graphviz</span><span class="p">(</span><span class="n">tree_clf</span><span class="p">,</span>
-                <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../data-handson/iris_tree.dot&quot;</span><span class="p">,</span>
+                <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../datasets/handson/iris_tree.dot&quot;</span><span class="p">,</span>
                 <span class="n">feature_names</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span>
                 <span class="n">class_names</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">,</span>
                 <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                 <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../data-handson/iris_tree.dot&quot;</span><span class="p">)</span>
+<span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../datasets/handson/iris_tree.dot&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -482,12 +482,12 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
 <span class="nn">Input In [5],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">export_graphviz</span><span class="p">(</span><span class="n">tree_clf</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>                 <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../data-handson/iris_tree.dot&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>                 <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../datasets/handson/iris_tree.dot&quot;</span><span class="p">,</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span>                 <span class="n">feature_names</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span>                 <span class="n">class_names</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">,</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span>                 <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="g g-Whitespace">      </span><span class="mi">6</span>                 <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../data-handson/iris_tree.dot&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../datasets/handson/iris_tree.dot&quot;</span><span class="p">)</span>
 
 <span class="ne">NameError</span>: name &#39;export_graphviz&#39; is not defined
 </pre></div>
@@ -927,11 +927,11 @@ Now let’s show that training the same model on the same data may produce a ver
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">export_graphviz</span><span class="p">(</span><span class="n">tree_reg1</span><span class="p">,</span>
-                <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../data-handson/reg_tree.dot&quot;</span><span class="p">,</span>
+                <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../datasets/handson/reg_tree.dot&quot;</span><span class="p">,</span>
                 <span class="n">feature_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x1&quot;</span><span class="p">],</span>
                 <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                 <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../data-handson/reg_tree.dot&quot;</span><span class="p">)</span>
+<span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../datasets/handson/reg_tree.dot&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -940,11 +940,11 @@ Now let’s show that training the same model on the same data may produce a ver
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
 <span class="nn">Input In [23],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">export_graphviz</span><span class="p">(</span><span class="n">tree_reg1</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>                 <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../data-handson/reg_tree.dot&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>                 <span class="n">out_file</span><span class="o">=</span><span class="s2">&quot;../../datasets/handson/reg_tree.dot&quot;</span><span class="p">,</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span>                 <span class="n">feature_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x1&quot;</span><span class="p">],</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span>                 <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span>                 <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../data-handson/reg_tree.dot&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">Source</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;../../datasets/handson/reg_tree.dot&quot;</span><span class="p">)</span>
 
 <span class="ne">NameError</span>: name &#39;export_graphviz&#39; is not defined
 </pre></div>
