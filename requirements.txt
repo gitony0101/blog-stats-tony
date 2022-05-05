@@ -4,5 +4,8 @@ numpy
 pandas
 seaborn
 scipy
-scikit-learn
-pytorch
+sklearn
+torch
+mlxtend
+pymc
+arviz
