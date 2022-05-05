@@ -13,10 +13,10 @@ parts:
       - file: sklearn/05-ensemble-learning
       - file: sklearn/06-dimensionality-reduction
       - file: sklearn/07-unsupervised-learning
-  - caption: Deep learning - PyTorch
+  - caption: Deep learning
     chapters:
       - file: pytorch/1-intro-pytorch
-      # - file: pytorch/2-pytorch-deeper
+      - file: pytorch/2-pytorch-deeper
       # - file: pytorch/3-cnn
       # - file: pytorch/4-rnn
       # - file: pytorch/5-transformer
