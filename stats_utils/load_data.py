@@ -1,7 +1,7 @@
 def load_fashion_mnist():
 
-    X = np.load(file="../../data-handson/fashion_mnist_X.npz")
-    y = np.load(file="../../data-handson/fashion_mnist_y.npz")
+    X = np.load(file="../../datasets/handson/fashion_mnist_X.npz")
+    y = np.load(file="../../datasets/handson/fashion_mnist_y.npz")
     X_train_full, X_test = X["train"], X["test"]
     y_train_full, y_test = y["train"], y["test"]
     X_train_full = X_train_full / 255.0
