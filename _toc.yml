@@ -20,22 +20,5 @@ parts:
       # - file: pytorch/3-cnn
       # - file: pytorch/4-rnn
       # - file: pytorch/5-transformer
-  - caption: Probablity
-    chapters:
-      - file: probability/01-probability
-      - file: probability/02-conditional-probability
-      - file: probability/03-distributions
-      # - file: probability/04-expectation
-      # - file: probability/05-continuous-random-variables
-      # - file: probability/06-moments
-      # - file: probability/07-joint-distributions
-      # - file: probability/08-transformations
-      # - file: probability/09-conditional-expectation
-      # - file: probability/10-inequalities-and-limit-theorems
-      # - file: probability/11-markov-chains
-      # - file: probability/12-markov-chain-monte-carlo
-      # - file: probability/13-poisson-processes
-      # - file: probability/14-sampling
-      # - file: probability/15-parameter-testing
-      # - file: probability/16-non-parameter-testing
-      # - file: probability/17-survival-analysis
+  # - caption: Probablity
+  #   chapters:
