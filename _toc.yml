@@ -17,8 +17,10 @@ parts:
     chapters:
       - file: pytorch/1-intro-pytorch
       - file: pytorch/2-pytorch-deeper
-      # - file: pytorch/3-cnn
+      - file: pytorch/3-cnn
       # - file: pytorch/4-rnn
       # - file: pytorch/5-transformer
+      # - file: pytorch/6-gnn
+      # - file: pytorch/7-gan
   # - caption: Probablity
   #   chapters:
