@@ -712,8 +712,8 @@ tensor([4, 5, 6], dtype=torch.int32)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tensor([[0.2136, 0.1030, 0.4068],
-        [0.7717, 0.3653, 0.2577]])
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tensor([[0.6467, 0.9447, 0.1097],
+        [0.6700, 0.6867, 0.2185]])
 </pre></div>
 </div>
 </div>
@@ -1150,7 +1150,6 @@ batch 2:, x: tensor([[0.7576, 0.2793, 0.4031],
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 
 <span class="n">_</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1160,7 +1159,7 @@ batch 2:, x: tensor([[0.7576, 0.2793, 0.4031],
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Image shape: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xticks</span><span class="o">=</span><span class="p">[],</span> <span class="n">yticks</span><span class="o">=</span><span class="p">[])</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">PurePath</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">)</span>
 
 <span class="c1"># plt.savefig(&#39;figures/1-02.png&#39;)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -1322,7 +1321,7 @@ cat_dog_images/dog-03.jpg 1
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=178x218 at 0x114D9C5E0&gt;, tensor([0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0,
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=178x218 at 0x12FB0DC60&gt;, tensor([0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0,
         1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1]))
 </pre></div>
 </div>
@@ -1370,7 +1369,7 @@ cat_dog_images/dog-03.jpg 1
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;PIL.Image.Image image mode=L size=28x28 at 0x1174871C0&gt;, 5)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;PIL.Image.Image image mode=L size=28x28 at 0x159CB68F0&gt;, 5)
 </pre></div>
 </div>
 <img alt="../_images/1-intro-pytorch_59_1.png" src="../_images/1-intro-pytorch_59_1.png" />
@@ -1713,7 +1712,6 @@ Epoch 190  Loss 0.0764
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Training accuracy&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Epoch&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 
 <span class="c1"># plt.savefig(&#39;figures/1-09.png&#39;)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -1721,11 +1719,7 @@ Epoch 190  Loss 0.0764
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/T/ipykernel_72548/2345332084.py:12: UserWarning: This figure was using constrained_layout, but that is incompatible with subplots_adjust and/or tight_layout; disabling constrained_layout.
-  plt.tight_layout()
-</pre></div>
-</div>
-<img alt="../_images/1-intro-pytorch_75_1.png" src="../_images/1-intro-pytorch_75_1.png" />
+<img alt="../_images/1-intro-pytorch_75_0.png" src="../_images/1-intro-pytorch_75_0.png" />
 </div>
 </div>
 <div class="section" id="evaluating-the-trained-model-on-the-test-dataset">
